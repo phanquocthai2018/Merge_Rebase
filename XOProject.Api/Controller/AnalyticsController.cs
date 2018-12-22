@@ -71,7 +71,7 @@ namespace XOProject.Api.Controller
                 Price = Map(new AnalyticsPrice())
             };
             // Get monthly summary
-            AnalyticsPrice _price = await _analyticsService.GetWeeklyAsync(symbol, year, month);
+            AnalyticsPrice _price = await _analyticsService.GetMonthlyAsync(symbol, year, month);
             result.Price = Map(_price);
 
             return Ok(result);

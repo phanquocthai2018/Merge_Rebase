@@ -46,9 +46,7 @@ namespace XOProject.Api.Tests
         {
             // Arrange
             ArrangeRates();
-
             // Act
-
             var result = await _analyticsController.Daily("CBI", 2018, 8, 17);
             var price = new PriceModel {
                 Open = 300.0M,
@@ -60,7 +58,7 @@ namespace XOProject.Api.Tests
             Assert.NotNull(result);
             var createdObject = result as OkObjectResult;
             var value = createdObject.Value as DailyModel;
-
+            Assert.AreEqual("CBI",value.Symbol);
             Assert.AreEqual(price.Open, value.Price.Open);
             Assert.AreEqual(price.Close, value.Price.Close);
             Assert.AreEqual(price.High, value.Price.High);
@@ -70,6 +68,59 @@ namespace XOProject.Api.Tests
             Assert.AreEqual(17, value.Day.Day);
         }
 
+        [Test]
+        public async Task Weekly()
+        {
+            // Arrange
+            ArrangeRates();
+            // Act
+            var result = await _analyticsController.Weekly("CBI", 2018, 33);
+            var price = new PriceModel
+            {
+                Open = 320.0M,
+                High = 400.0M,
+                Low = 300.0M,
+                Close = 400.0M
+            };
+            // Assert
+            Assert.NotNull(result);
+            var createdObject = result as OkObjectResult;
+            var value = createdObject.Value as WeeklyModel;
+            Assert.AreEqual("CBI", value.Symbol);
+            Assert.AreEqual(price.Open, value.Price.Open);
+            Assert.AreEqual(price.Close, value.Price.Close);
+            Assert.AreEqual(price.High, value.Price.High);
+            Assert.AreEqual(price.Low, value.Price.Low);
+            Assert.AreEqual(2018, value.Year);
+            Assert.AreEqual(33, value.Week);
+        }
+
+        [Test]
+        public async Task Monthly()
+        {
+            // Arrange
+            ArrangeRates();
+            // Act
+            var result = await _analyticsController.Monthly("IBM", 2018, 9);
+            var price = new PriceModel
+            {
+                Open = 390.0M,
+                High = 600.0M,
+                Low = 390.0M,
+                Close = 450.0M
+            };
+            // Assert
+            Assert.NotNull(result);
+            var createdObject = result as OkObjectResult;
+            var value = createdObject.Value as MonthlyModel;
+            Assert.AreEqual("IBM", value.Symbol);
+            Assert.AreEqual(price.Open, value.Price.Open);
+            Assert.AreEqual(price.Close, value.Price.Close);
+            Assert.AreEqual(price.High, value.Price.High);
+            Assert.AreEqual(price.Low, value.Price.Low);
+            Assert.AreEqual(2018, value.Year);
+            Assert.AreEqual(9, value.Month);
+        }
         private void ArrangeRates()
         {
             var rates = new[]
@@ -119,28 +170,28 @@ namespace XOProject.Api.Tests
                 new HourlyShareRate
                 {
                     Id = 7,
-                    Symbol = "CBI",
+                    Symbol = "IBM",
                     Rate = 390.0M,
                     TimeStamp = new DateTime(2018, 09, 1, 5, 0, 0)
                 },
                 new HourlyShareRate
                 {
                     Id = 8,
-                    Symbol = "CBI",
+                    Symbol = "IBM",
                     Rate = 500.0M,
                     TimeStamp = new DateTime(2018, 09, 2, 6, 0, 0)
                 },
                  new HourlyShareRate
                 {
                     Id = 9,
-                    Symbol = "CBI",
+                    Symbol = "IBM",
                     Rate = 600.0M,
                     TimeStamp = new DateTime(2018, 09, 3, 5, 0, 0)
                 },
                 new HourlyShareRate
                 {
                     Id = 10,
-                    Symbol = "CBI",
+                    Symbol = "IBM",
                     Rate = 450.0M,
                     TimeStamp = new DateTime(2018, 09, 4, 6, 0, 0)
                 },
