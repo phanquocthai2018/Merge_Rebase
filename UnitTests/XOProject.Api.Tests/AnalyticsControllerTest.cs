@@ -208,7 +208,7 @@ namespace XOProject.Api.Tests
                     Symbol = "CBI",
                     Rate = 850.0M,
                     TimeStamp = new DateTime(2018, 09, 4, 9, 0, 0)
-                }
+                },
             };
             //_analyticsServiceMock.Object._shareControlRepository = _shareRepositoryMock.Object;
 
