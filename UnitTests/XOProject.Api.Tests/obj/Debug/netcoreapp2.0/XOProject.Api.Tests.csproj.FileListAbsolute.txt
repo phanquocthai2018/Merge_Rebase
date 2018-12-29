@@ -43,3 +43,6 @@ C:\Users\phanquocthai\Desktop\CrossExchange_GitTest\UnitTests\XOProject.Api.Test
 C:\Users\phanquocthai\Desktop\CrossExchange_GitTest\UnitTests\XOProject.Api.Tests\obj\Debug\netcoreapp2.0\XOProject.Api.Tests.csproj.CopyComplete
 C:\Users\phanquocthai\Desktop\CrossExchange_GitTest\UnitTests\XOProject.Api.Tests\obj\Debug\netcoreapp2.0\XOProject.Api.Tests.dll
 C:\Users\phanquocthai\Desktop\CrossExchange_GitTest\UnitTests\XOProject.Api.Tests\obj\Debug\netcoreapp2.0\XOProject.Api.Tests.pdb
+C:\Users\phanquocthai\Desktop\CrossExchange_GitTest\UnitTests\XOProject.Api.Tests\bin\Debug\netcoreapp2.0\Data\portfolio.json
+C:\Users\phanquocthai\Desktop\CrossExchange_GitTest\UnitTests\XOProject.Api.Tests\bin\Debug\netcoreapp2.0\Data\rate.json
+C:\Users\phanquocthai\Desktop\CrossExchange_GitTest\UnitTests\XOProject.Api.Tests\bin\Debug\netcoreapp2.0\Data\trade.json
