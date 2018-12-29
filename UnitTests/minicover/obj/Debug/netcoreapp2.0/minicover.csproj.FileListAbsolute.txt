@@ -1,9 +1,0 @@
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\bin\Debug\netcoreapp2.0\minicover.deps.json
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\bin\Debug\netcoreapp2.0\minicover.dll
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\bin\Debug\netcoreapp2.0\minicover.pdb
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\obj\Debug\netcoreapp2.0\minicover.csprojAssemblyReference.cache
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\obj\Debug\netcoreapp2.0\minicover.csproj.CoreCompileInputs.cache
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\obj\Debug\netcoreapp2.0\minicover.AssemblyInfoInputs.cache
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\obj\Debug\netcoreapp2.0\minicover.AssemblyInfo.cs
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\obj\Debug\netcoreapp2.0\minicover.dll
-C:\Users\phanquocthai\Desktop\cross-exchange_new\CrossExchange\UnitTests\minicover\obj\Debug\netcoreapp2.0\minicover.pdb
