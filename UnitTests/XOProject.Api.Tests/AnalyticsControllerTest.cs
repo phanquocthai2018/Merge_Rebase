@@ -228,7 +228,7 @@ namespace XOProject.Api.Tests
                     Id = 15,
                     Symbol = "REL",
                     Rate = 350.0M,
-                    TimeStamp = new DateTime(2018, 12, 5, 8, 0, 0)
+                    TimeStamp = new DateTime(2018, 12, 4, 8, 0, 0)
                 },
                   new HourlyShareRate
                 {
